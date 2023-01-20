@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* menu */
+nav{
+    width: 100vw;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    transition: all 0.6s;
+    background-color: dimgrey;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    z-index: 1000;
+    
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.menu li a:hover{
+    color: darkgrey;
+    font-size: 15px;
+}
+input{
+    appearance: none;
+    background-image: url(./resources/abrirmenu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    left: 5px;
+}
+input:checked ~ .menu{
+    display: block;
+}
+input:checked{
+    background-image: url(./resources/cerrarmenu.png);
+    transition: 0.2s;
+}
+
+
+/* inicio */
+.containerinicio{
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    height: 96%;
+    background-color:lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.inicioizquierda{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inicioderecha{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: black;
+    background-color: darkgray;
+}
+.logoinicio{
+    height: 200px;
+}
+
+
+/* cursos */
+.containercursos{
+    position: absolute;
+    top: -1000vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 10px;
+    
+}
+.cursos{
+    height: 155px;
+    width: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 0px 5px white;
+}
+.cursos:hover{
+    
+    background-color: dimgrey;
+}
+.logocursos{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.descripcioncurso{
+    width: 300px;
+    height: 155px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgcursos{
+    width: 90px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* documentacion */
+.containerdocumentacion{
+    width: 100vw;
+    height: 95.1vh;
+    top: 30px;
+    background-color: darkgray;
+    position: absolute;
+    top: -1000vh;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.docu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pdflaravel{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50vw;
+    height: 80vh;
+}
+.logoflechas{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
