@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./resources/logopagina.png">
     <title>Programming Courses</title>
@@ -168,11 +168,29 @@
             <h2>Documentacion</h2>
         </div>  
 
-        <div class="docu">
-            <a><img src="./resources/flechaizquierda.png" class="logoflechas"alt=""></a>
-            <iframe src="./resources/GUIA LARAVEL.pdf" class="pdflaravel"></iframe>
-            <a><img src="./resources/flechaderecha.png" class="logoflechas" alt=""></a>
-        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe src="./resources/GUIA LARAVEL.pdf" class="pdflaravel"></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe src="./resources/GUIA LARAVEL.pdf" class="pdflaravel"></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe src="./resources/GUIA LARAVEL.pdf" class="pdflaravel"></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        
 
     </div>
     
